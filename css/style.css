@@ -1,0 +1,187 @@
+body{
+    background: #F1F5F6 !important;
+    font-family: 'Roboto', sans-serif!;
+    color:#41688A!important;
+    padding: 0!important;
+    margin: 0!important;
+    overflow-x: hidden!important; /* Prevent scroll on narrow devices */
+}
+
+html{
+    overflow-x: hidden!important; /* Prevent scroll on narrow devices */
+}
+
+/*-------nav drop down menu-------*/
+
+.dropdown-menu {
+    margin-top: 0;
+}
+.dropdown-menu .dropdown-toggle::after {
+    vertical-align: middle;
+    border-left: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+}
+.dropdown-menu .dropdown .dropdown-menu {
+    left: 100%;
+    top: 0%;
+    margin:0 20px;
+    border-width: 0;
+}
+.dropdown-menu .dropdown .dropdown-menu.left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu > li a:hover,
+.dropdown-menu > li.show {
+	background: #007bff;
+	color: white;
+}
+.dropdown-menu > li.show > a{
+	color: white;
+}
+
+
+/*----end of drop down menu-------*/
+.well{
+    
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #eff3f7;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    text-align: justify;
+}
+
+/*--------header------------*/
+header{
+    /* background-color:#0b4468; */
+
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+header .top_bar{
+    padding: 5px 0;
+    /* background: #1B477E; */
+color: #fff;
+    font-size: 17px;
+}
+header .top_bar i:hover{
+color:#396fad;
+}
+header .top_bar a{
+    color: #fff;
+    padding:0 5px;
+}
+.header_logo{
+    padding:5px 0;
+}
+
+.my_menu ul li a{
+    color: #0b4468!important;
+}
+
+
+
+nav{
+    background-color:#A2BFE9;
+   
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+nav ul li{
+    margin-left: 50px;
+}
+
+
+/* -----end of header------ */
+
+/*------------ footer------------ */
+.footer{
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        padding: 20px;
+        color:#fff;
+      
+    }
+    .footer ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .footer h3{
+      color: #A2BFE9;
+    }
+    .footer ul li a{ 
+        font-size: 15px;
+        color: #fff;
+    }
+    .footer .footer_address p a{
+        color: #fff !important;
+    }
+    /*-----copyright------*/
+    .copyright{
+    background-color: #293F53;
+  
+        text-align: center;
+        color:#999999;
+        padding-top: 10px;
+        
+    }
+
+    /* ---subjects-- */
+    .subjects a{
+        text-decoration: none;
+    }
+   /* media */
+ 
+   @media(max-width:768px){
+    header .header_logo h2 {
+    font-size: 25px!important;
+    margin: 0px!important;
+    line-height:40px!important;
+    }
+
+    header .header_logo h5 {
+        font-size: 18px!important;
+        }
+
+        header .header_logo h6 {
+          margin-top: 30px !important;
+            }
+
+            nav ul li{
+                margin-left: 0px!important;
+            }
+           .top_bar .top_bar_social_link{
+            display: none!important;
+            }
+            .top_bar .user{
+               float:none!important;
+               text-align: center;
+            }
+            .top_bar .user a{
+               margin:0!important;
+            }
+            
+}
+   @media (min-width: 768px) {
+    .dropdown-menu .dropdown .dropdown-menu {
+        margin:0;
+        border-width: 1px;
+    }
+}
+
+   /* end of media */
+
